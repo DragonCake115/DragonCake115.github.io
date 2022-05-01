@@ -1,90 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+<htm>
+  <head>
+    <meta charset="UTF-8">
+    <title>オイラーの公式・定理まとめ</title>
+    <link rel="stylesheet"  href="new.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="title">オイラーの公式・定理まとめ</h1>
+        <a href="matome.html" class="conclusion">まとめ</a> <p class="update_date">更新日時2021/03/07</p>
+    
+        <p>レオンハルト・オイラーは偉大な数学者で、いろいろな分野で業績を残しています。オイラーの定理、公式はたくさんあります。主要なもの、高校数学で理解できるものを中心にまとめました（順番は適当です）。</p>
+        <p>美しい定理が並んでいますが、大学受験ではほとんど使われないと思います（4、6あたりは知っていると役に立つかもしれません）。
+        </p>
+        <p>数学オリンピックを目指す場合は7以外は知っておきたいところです。</p>
+        
+        <p class="content"><strong>目次</strong></p>
+        <ul>
+          <li><a href="chapple.html">1:チャップル・オイラーの定理</a></li>
+          <li><a href="doctor.html">2:博士の愛した数式</a></li>
+          <li><a href="polyhedron.html">3:オイラーの多面体定理</a></li>
+          <li><a href="number.html">4:オイラーの定理（整数論）</a></li>
+          <li><a href="graph.html">5:オイラーグラフ（一筆書き）</a></li>
+          <li><a href="eulerian_ray.html">6:オイラー線</a></li>
+          <li><a href="lagrangian.html">7:オイラー・ラグランジュ方程式</a></li>
+          <li><a href="infinite.html">8:オイラーの定理（無限積）</a></li>
+        </ul>
+      </header>
+      <main>
+        <h2 class="title_image">1:チャップル・オイラーの定理</h2>
+        <p class="main">外心と内心の距離<br>
+        OI<sup>2</sup>=R<sup>2</sup>－2Rr</p>
+        <p class="explanation">外心と内心の距離を外接円の半径と内接円の半径のみで表した非常に美しい定理です。チャップルモオイラーとは孤立に発見していたようです。→オイラーの定理（初等幾何）</p>
+    
+        <h2 class="title_image">2:博士の愛した数式</h2>
+        <p class="main">e<sup>iπ</sup>+1=0</p>
+        <p class="explanation">自然対数の底e,虚数単位i,円周率πが共存する非常に美しい等式です。→複素指数関数とオイラーの公式</p>
+    
+        <h2 class="title_image">3:オイラーの多面体定理</h2>
+        <p class="main">任意の穴の開いていない多面体において、<br>
+        （頂点の数）‐（辺の数）+（面の数）＝2</p>
+        <p class="explanation">全ての多面体に共通する非常に美しい性質です。→オイラーの多面体定理の証明</p>
+    
+        <h2 class="title_image">4:オイラーの定理（整数論）</h2>
+        <p class="main">nを自然数、aをnと互いに素な正の整数としたとき、a<sup>∅(n)</sup>≡1(mod n)</p>
+        <p class="explanation">∅(n)は1からn-1までの自然数の中でnと互いに素なものの個数を表し、オイラーの∅関数と呼ばれます。→オイラーのファイ関数のイメージ</p>
+    
+        <h2 class="title_image">5:オイラーグラフ（一筆書き）</h2>
+        <p class="main">オイラーグラフ⇔すべての頂点から辺が偶数本出ている<br>
+        準オイラーグラフ⇔辺が奇数本出ている頂点が２つのみ</p>
+    
+        <h2 class="title_image">6:オイラー線</h2>
+        <p class="main">三角形の外心O、重心G、垂心Hは一直線上にあり、<br>
+        OG:GH=1:2</p>
+        <p class="explanation">この直線をオイラー線といいます。チャップル・オイラーの定理に勝るとも劣らない美しい定理です。→オイラー線の3通りの証明</p>
+    
+        <h2 class="title_image">7:オイラー・ラグランジュ方程式（変分法）</h2>
+        <p class="main">#ⅾL/ⅾx# - #ｄ/ⅾt# #ⅾL/ⅾx# =0</p>
+        <p class="explanation">ニュートンの運動方程式を変形していくとオイラー・ラグランジュ方程式になります。この方程式は変分法と呼ばれる手法の基礎になっており、大学で学びます。詳細は説明できませんが、変分法を学べば最速降下線や懸垂線の理解が深まります。<br>
+        変分法の応用例:→懸垂線の2通りの導出</p>
+    
+        <h2 class="title_image">8:オイラーの公式（無限積）</h2>
+        <p class="explanation"></p>
+      </main>
+
+      <footer class="footer">
+        &copy;2019-2021 Bend Inc.
+      </footer>
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-</body>
-</html>
+  </body>
+</htm>
